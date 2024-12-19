@@ -21,6 +21,8 @@ public class NotificationController {
         return notificationRepository.save(notification);
     }
 
+
+
     @GetMapping
     public List<Notification> getNotifications() {
         return notificationRepository.findAll();
